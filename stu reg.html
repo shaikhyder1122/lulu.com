@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+<style>
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="file"],
+  select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="file"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+  .gender-select {
+    position: relative;
+  }
+  .gender-select label {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .gender-select input[type="radio"] {
+    display: none;
+  }
+  .gender-select input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  .gender-select input[type="radio"]:checked + label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  .submit-btn,
+  .reset-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+  }
+  .reset-btn {
+    background-color: #ccc;
+    margin-left: 10px;
+  }
+  .submit-btn:hover,
+  .reset-btn:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Registration</h2>
+  <form action="new reg.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="father_name">Father Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required>
+    
+    <label for="aadhar">Aadhar Number:</label>
+    <input type="text" id="aadhar" name="aadhar" pattern="[0-9]{12}" required>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    
+    <button type="submit" class="submit-btn">Submit</button>
+    <button type="reset" class="reset-btn">Reset</button>
+  </form>
+</div>
+
+</body>
+</html>

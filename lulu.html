@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LULU BOYS HOSTEL</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Styling for the header */
+    header {
+      background-color: skyblue;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+    }
+    /* Styling for the hostel name */
+    .hostel-name {
+      font-size: 50px;
+      margin: 0;
+      animation: scroll 10s linear infinite; /* Adding animation for title scrolling */
+    }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    /* Styling for the navigation */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: lightblue; /* Background color for navigation items */
+      transition: background-color 0.3s ease; /* Adding transition effect */
+    }
+    nav ul li a:hover {
+      background-color: skyblue; /* Changing background color on hover */
+    }
+    /* Styling for the photo gallery */
+    .gallery {
+      overflow-x: auto;
+      white-space: nowrap;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 10px;
+    }
+    /* Styling for quick links */
+    .quick-links {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .quick-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .quick-links ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with the hostel name -->
+  <header>
+    <div class="container">
+      <h1 class="hostel-name">LULU BOYS HOSTEL</h1>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="home.html">#Home</a></li>
+        <li><a href="stu reg.html">#Student new Registration </a></li>
+        <li><a href="con det.html">#Contact Details </a></li>
+        <li><a href="facility.html">#facilities available</a></li>
+        <li><a href="#gallery">#Gallery</a></li>
+        <li><a href="stu det.html">#Student Details</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PG Photo Gallery -->
+  <div class="gallery">
+    <div class="container">
+      <center><img src="E:\pictures\Banner_2.jpg" alt="PG Image"></center>
+    </div>
+  </div>
+
+  <!-- Quick Links -->
+  <div class="quick-links">
+    <div class="container">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#contact-details">Contact Info</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="stu reg.html">Student Registration</a></li>
+        <li><a href="facility.html">Facilities available</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
